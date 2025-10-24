@@ -11,7 +11,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink = ``
+const resumeLink = `https://raw.githubusercontent.com/tarun-1507/tarun-port-folio/main/src/assets/Tarun.sd.pdf`;
 
 
 const Resume = () => {
