@@ -48,7 +48,7 @@ const Projects = () => {
               isBlog={false}
               title="Personal Portfolio"
               description="This project involved designing and developing a personal portfolio to serve as a consolidated showcase of my technical skills, projects, and professional experience. The site was built using a modern front-end framework like React demonstrating proficiency in building component-based, maintainable applications. I ensured a flawless user experience across all devices by implementing a fully responsive design with custom [e.g., CSS Modules or Tailwind CSS] for cross-browser compatibility."
-              demoLink="https://tarun-port-folio.netlify.app/"
+              demoLink="https://tarunb-portfolio.netlify.app/"
             />
           </Col>
 
