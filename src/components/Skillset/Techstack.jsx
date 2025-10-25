@@ -8,7 +8,6 @@ import {
 } from "react-icons/di";
 import {
   SiTailwindcss,
-  SiSpring,
   SiSpringboot,
   SiRedux,
   SiMongodb,
