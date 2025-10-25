@@ -41,13 +41,10 @@ const Techstack = () => {
         <SiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSpring />
+        <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSpringboot />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
