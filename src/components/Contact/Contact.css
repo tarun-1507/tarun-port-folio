@@ -1,0 +1,98 @@
+/* CONTACT FORM SECTION */
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    /* Adjusted height for responsiveness, 80vh is fine, but can be adjusted later */
+    height: 80vh; 
+    margin-top: 4rem;
+    padding-top: 3rem;
+    /* Ensure the contact form has the proper background if it's a full section, 
+        but keeping it transparent here to inherit the parent background. */
+}
+
+.c-left{
+    /* Inherits from the home-about-social section style */
+    text-align: center !important;
+    padding-top: 25px;
+    color: white !important;
+}
+
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right>form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Input and Textarea Styling */
+.c-right .user{
+    width: 24rem;
+    height: 3rem;
+    padding: 0.3em;
+    outline: none;
+    /* Changed border color to Muted Coral */
+    border: 2px solid #FF6F61; /* MUTED CORAL ACCENT */
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    /* FIX: Set to SEMI-TRANSPARENT dark background */
+    background-color: rgba(18, 12, 10, 0.7); 
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.4); /* Soft Coral Inner Shadow */
+    transition: all 0.3s ease;
+}
+
+.c-right .user:hover,
+.c-right .user:focus {
+    /* Updated hover shadow to a more vibrant Muted Coral */
+    box-shadow: 0 0 12px #FF6F61; /* VIBRANT MUTED CORAL SHADOW */
+    border-color: #FF6F61;
+}
+
+/* Apply consistent background to all inputs and textareas not covered by .user */
+input, textarea {
+    /* Set generic input background to SEMI-TRANSPARENT */
+    background-color: rgba(18, 12, 10, 0.7); 
+    color: white;
+}
+
+textarea{
+    height: 5rem!important;
+}
+
+/* Success and Error Messages */
+.done{
+    font-size: 19px;
+    color: #4CAF50; /* A standard, professional green for success */
+    font-weight: 600;
+}
+.not-done{
+    font-size: 19px;
+    color: #FF6F61; /* Using your Muted Coral accent for errors/not-done states */
+    font-weight: 600;
+}
+
+.c-blur1{
+    /* Keep blur styling separate if it relies on a specific blur effect component */
+    top: 1rem;
+    left: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+}
