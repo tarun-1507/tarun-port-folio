@@ -3,8 +3,8 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 
-import Particle from '../components/Particle'
-import pdf from "../assets/Tarun.sd.pdf"
+import Particle from "../components/Particle";
+import pdf from "../assets/Tarun.sd.pdf";
 
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -13,12 +13,10 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pd
 
 const resumeLink = `https://raw.githubusercontent.com/tarun-1507/tarun-port-folio/main/src/assets/Tarun.sd.pdf`;
 
-
 const Resume = () => {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
-    
     setWidth(window.innerWidth);
   }, []);
 
@@ -57,7 +55,7 @@ const Resume = () => {
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
